@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>POS Qatar (dev)</title>
+	</head>
+	<body>
+		<!--
+			Dev-only shell so `npm run dev` works standalone.
+			In production the SPA is mounted by pos_qatar/www/pos-qatar.html,
+			which provides `window.pos_qatar` boot info from Frappe.
+		-->
+		<script>
+			window.pos_qatar = window.pos_qatar || {
+				user: "Administrator",
+				full_name: "Administrator",
+				csrf_token: "",
+				roles: ["System Manager"],
+				default_pos_profile: null,
+				sitename: "dev",
+			};
+		</script>
+		<div id="pos-qatar-root"></div>
+		<script type="module" src="/src/main.tsx"></script>
+	</body>
+</html>

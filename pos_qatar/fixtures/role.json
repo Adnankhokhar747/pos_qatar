@@ -1,0 +1,26 @@
+[
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "doctype": "Role",
+  "is_custom": 1,
+  "name": "POS Cashier",
+  "role_name": "POS Cashier"
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "doctype": "Role",
+  "is_custom": 1,
+  "name": "POS Supervisor",
+  "role_name": "POS Supervisor"
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "doctype": "Role",
+  "is_custom": 1,
+  "name": "POS Manager",
+  "role_name": "POS Manager"
+ }
+]

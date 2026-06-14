@@ -1,0 +1,57 @@
+[
+ {
+  "doctype": "Custom Field",
+  "dt": "POS Profile",
+  "fieldname": "pq_settings_section",
+  "fieldtype": "Section Break",
+  "label": "POS Qatar Settings",
+  "module": "POS Qatar",
+  "name": "POS Profile-pq_settings_section"
+ },
+ {
+  "default": "Grid",
+  "doctype": "Custom Field",
+  "dt": "POS Profile",
+  "fieldname": "pq_default_view",
+  "fieldtype": "Select",
+  "insert_after": "pq_settings_section",
+  "label": "Default View",
+  "module": "POS Qatar",
+  "name": "POS Profile-pq_default_view",
+  "options": "Grid\nList"
+ },
+ {
+  "default": "Light",
+  "doctype": "Custom Field",
+  "dt": "POS Profile",
+  "fieldname": "pq_color_theme",
+  "fieldtype": "Select",
+  "insert_after": "pq_default_view",
+  "label": "Color Theme",
+  "module": "POS Qatar",
+  "name": "POS Profile-pq_color_theme",
+  "options": "Light\nDark\nSystem"
+ },
+ {
+  "default": "0",
+  "doctype": "Custom Field",
+  "dt": "POS Profile",
+  "fieldname": "pq_enable_offline",
+  "fieldtype": "Check",
+  "insert_after": "pq_color_theme",
+  "label": "Enable Offline Mode",
+  "module": "POS Qatar",
+  "name": "POS Profile-pq_enable_offline"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "POS Profile",
+  "fieldname": "pq_receipt_print_format",
+  "fieldtype": "Link",
+  "insert_after": "pq_enable_offline",
+  "label": "Receipt Print Format",
+  "module": "POS Qatar",
+  "name": "POS Profile-pq_receipt_print_format",
+  "options": "Print Format"
+ }
+]

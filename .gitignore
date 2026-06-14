@@ -5,3 +5,12 @@
 tags
 node_modules
 __pycache__
+
+# Built frontend assets (run `npm run build` in frontend/ to regenerate)
+pos_qatar/public/frontend/*
+!pos_qatar/public/frontend/.gitkeep
+
+# TS build cache and compiled config output
+frontend/*.tsbuildinfo
+frontend/vite.config.js
+frontend/vite.config.d.ts

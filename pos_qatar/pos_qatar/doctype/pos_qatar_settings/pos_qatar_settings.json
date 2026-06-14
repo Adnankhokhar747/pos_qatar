@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "creation": "2026-06-14 00:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "default_theme",
+  "enable_offline_mode",
+  "idle_logout_minutes",
+  "column_break_receipt",
+  "receipt_footer_message",
+  "receipt_qr_template"
+ ],
+ "fields": [
+  {
+   "default": "Light",
+   "fieldname": "default_theme",
+   "fieldtype": "Select",
+   "label": "Default Theme",
+   "options": "Light\nDark\nSystem"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_offline_mode",
+   "fieldtype": "Check",
+   "label": "Enable Offline Mode"
+  },
+  {
+   "default": "15",
+   "description": "Automatically log out the POS screen after this many minutes of inactivity. Set to 0 to disable.",
+   "fieldname": "idle_logout_minutes",
+   "fieldtype": "Int",
+   "label": "Idle Logout (Minutes)",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_receipt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "receipt_footer_message",
+   "fieldtype": "Small Text",
+   "label": "Receipt Footer Message"
+  },
+  {
+   "description": "Jinja template used to build the QR code payload printed on receipts.",
+   "fieldname": "receipt_qr_template",
+   "fieldtype": "Code",
+   "label": "Receipt QR Template",
+   "options": "Jinja"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-06-14 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "POS Qatar",
+ "name": "POS Qatar Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "POS Manager",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

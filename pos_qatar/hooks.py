@@ -5,6 +5,15 @@ app_description = "Point of Sales Qatar"
 app_email = "info@globcomqatar.com"
 app_license = "mit"
 
+# Fixtures
+# ------------------
+# Roles and POS Profile custom fields shipped with the app
+
+fixtures = [
+	{"doctype": "Role", "filters": [["name", "in", ["POS Cashier", "POS Supervisor", "POS Manager"]]]},
+	{"doctype": "Custom Field", "filters": [["dt", "=", "POS Profile"], ["fieldname", "like", "pq_%"]]},
+]
+
 # Apps
 # ------------------
 
